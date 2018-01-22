@@ -92,8 +92,8 @@ class LyviaSetup extends Migration
             $table->float('Total_Capital_Spent', 20,2)->default(0);
             $table->ipAddress('RunningIP')->default('0.0.0.0');
             $table->string('Status', 16)->default('-');
-            $table->timestamp('StartedAt')->default('0000-00-00 00:00:00');
-            $table->timestamp('EndAt')->default('0000-00-00 00:00:00');;
+            $table->timestamp('StartedAt')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('EndAt')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamps();
         });
 
