@@ -62,8 +62,6 @@ return [
         'buttons' => [
             'create',
             'export',
-            'print',
-            'reset',
             'reload',
         ],
     ],

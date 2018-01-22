@@ -17,8 +17,7 @@ class JobDataTable extends DataTable
     {
         return datatables($query)
             ->addColumn('action', function ($query) {
-                return '<a href="job/' . $query->id . '/edit" class="btn btn-xs bg-navy"><i class="glyphicon glyphicon-edit"></i></a>
-                        <a href="job/' . $query->id . '/delete" class="btn btn-xs bg-navy"><i class="glyphicon glyphicon-remove"></i></a>';
+                return '<a href="job/' . $query->JobID . '/edit" class="btn btn-xs bg-navy"><i class="glyphicon glyphicon-edit"></i></a>';
             });
     }
 

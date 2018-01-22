@@ -54,7 +54,7 @@ Route::post('/data/symbol/update/{SymbolID}', 'Data\SymbolController@update')->m
 /*JOB*/
 Route::resource('/job/job', 'Job\JobController')->middleware('auth');
 Route::post('/job/job/store', 'Job\JobController@store')->middleware('auth');
-Route::post('/job/job/update/{id}', 'Job\JobController@update')->middleware('auth');
+Route::post('/job/job/update/{JobID}', 'Job\JobController@update')->middleware('auth');
 
 Route::resource('/job/session', 'Job\JobSessionController')->middleware('auth');
 

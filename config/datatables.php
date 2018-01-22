@@ -9,7 +9,7 @@ return [
          * Smart search will enclose search keyword with wildcard string "%keyword%".
          * SQL: column LIKE "%keyword%"
          */
-        'smart' => true,
+        'smart' => false,
 
         /*
          * Multi-term search will explode search keyword using spaces resulting into multiple term search.
@@ -20,7 +20,7 @@ return [
          * Case insensitive will search the keyword in lower case format.
          * SQL: LOWER(column) LIKE LOWER(keyword)
          */
-        'case_insensitive' => true,
+        'case_insensitive' => false,
 
         /*
          * Wild card will add "%" in between every characters of the keyword.
