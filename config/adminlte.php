@@ -206,12 +206,12 @@ return [
 //                    'icon' => 'check',
 //                    'icon_color' => 'purple',
 //                ],
-                [
-                    'text' => 'Logout',
-                    'url' => 'logout',
-                    'icon' => 'power-off',
-                    'icon_color' => 'purple',
-                ],
+//                [
+//                    'text' => 'Logout',
+//                    'url' => 'logout',
+//                    'icon' => 'power-off',
+//                    'icon_color' => 'purple',
+//                ],
             ],
         ],
     ],
