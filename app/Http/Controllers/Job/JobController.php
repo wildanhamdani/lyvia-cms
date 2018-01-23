@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Job;
 use App\Symbol;
 use App\User;
+use App\UserExchange;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
@@ -35,10 +36,10 @@ class JobController extends Controller
             $currencies[$value->CurrencyID] = $value->Name;
         }
 
-        $user = User::all();
-        $users = [];
-        foreach ($user as $key => $value) {
-            $users[$value->id] = $value->name;
+        $userexchange = UserExchange::all();
+        $userexchanges = [];
+        foreach ($userexchange as $key => $value) {
+            $userexchanges[$value->id] = $value->name;
         }
 
         $exchange = Exchange::all();
@@ -51,7 +52,7 @@ class JobController extends Controller
         return view('pages.job.job.create')->with([
             'symbols' => $symbols,
             'currencies' => $currencies,
-            'users' => $users,
+            'userexchanges' => $userexchanges,
             'exchanges' => $exchanges
         ]);
     }
@@ -71,10 +72,10 @@ class JobController extends Controller
             $currencies[$value->CurrencyID] = $value->Name;
         }
 
-        $user = User::all();
-        $users = [];
-        foreach ($user as $key => $value) {
-            $users[$value->id] = $value->name;
+        $userexchange = UserExchange::all();
+        $userexchanges = [];
+        foreach ($userexchange as $key => $value) {
+            $userexchanges[$value->id] = $value->name;
         }
 
         $exchange = Exchange::all();
@@ -87,7 +88,7 @@ class JobController extends Controller
             'data' => $data,
             'symbols' => $symbols,
             'currencies' => $currencies,
-            'users' => $users,
+            'userexchanges' => $userexchanges,
             'exchanges' => $exchanges
         ]);
     }

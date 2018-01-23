@@ -34,11 +34,11 @@
                         </div>
                         <div class="form-group">
                             {{ Form::label('Buying_Username', 'Buying_Username') }}
-                            {{ Form::select('Buying_Username', $users, $data->Buying_Username, array('class' => 'form-control')) }}
+                            {{ Form::select('Buying_Username', $userexchanges, $data->Buying_Username, array('class' => 'form-control')) }}
                         </div>
                         <div class="form-group">
                             {{ Form::label('Selling_Username', 'Selling_Username') }}
-                            {{ Form::select('Selling_Username', $users, $data->Selling_Username, array('class' => 'form-control')) }}
+                            {{ Form::select('Selling_Username', $userexchanges, $data->Selling_Username, array('class' => 'form-control')) }}
                         </div>
                         <div class="form-group">
                             {{ Form::label('Buying_Currency', 'Buying_Currency') }}

@@ -18,7 +18,7 @@
         <div class="col-md-8">
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Edit {{$data->Symbol}}</h3>
+                    <h3 class="box-title">Edit Symbol</h3>
                 </div>
                 {{ Form::open(array('url' => URL::to('/data/symbol/update/'.$data->SymbolID,[],null))) }}
                 <form role="form">

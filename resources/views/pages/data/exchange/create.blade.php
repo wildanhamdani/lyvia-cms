@@ -18,7 +18,7 @@
         <div class="col-md-8">
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Create Roles</h3>
+                    <h3 class="box-title">Create Exchange</h3>
                 </div>
                 {{ Form::open(array('url' => URL::to('/data/exchange/store',[],null))) }}
                 <form role="form">
